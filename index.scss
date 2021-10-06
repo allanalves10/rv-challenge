@@ -1,0 +1,261 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background: #F2F2F2;
+
+    .container {
+        background-color: #75BC97;
+        display: flex;
+        flex-direction: row;
+        height: 400px;
+        width: 100%;
+
+        .left {
+            background-image: url('/src/assets/hero/desktop/left-leaves.png');
+            background-repeat: no-repeat;
+            background-size: 800px 400px;
+            
+            width: 1050px;
+            padding: 0px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            color: #FFFFFF;
+            font-size: 30px;
+
+            h1 {
+                width: 350px;
+                height: 210px;
+                margin: 0;
+            }
+
+            div {
+                * {
+                    margin-top: 25px;
+                }
+            }
+        }
+        
+        .center {
+            background-image: url('/src/assets/hero/desktop/plantperson.png');
+            background-repeat: no-repeat;
+            background-size: 300px 380px;
+            
+            width: 405px;
+            height: 400px;
+            
+        }
+
+        .right {
+            background-image: url('/src/assets/hero/desktop/right-leaves.png');
+            background-repeat: no-repeat;
+            background-size: 400px 400px;
+            // right: 10%;
+            width: 600px;
+            // height: 800px;
+            background-position: top right;
+        } 
+    }
+}
+
+div#first {
+    position: absolute;
+    width: 862px;
+    height: 500px;
+    left: 0px;
+    top: 0px;
+    
+    background: url(src/assets/hero/desktop/left-leaves.png);
+}
+
+div#header {
+    position: absolute;
+    width: 1440px;
+    height: 500px;
+    left: 0px;
+    top: 0px;
+
+    background: #75BC97;
+
+    // background: url(src/assets/hero/desktop/left-leaves.png) no-repeat left, url(src/assets/hero/desktop/plantperson.png) no-repeat center center, url(images/hero/desktop/right-leaves.png) no-repeat right center;
+    // background-size: 33vw, 33vw, 33vw;
+    // display: flex;
+    // flex-direction: row;
+    // height: 100vh !important;
+    // width: 100vw;
+    // box-sizing: border-box;
+}
+
+div#one {
+    position: absolute;
+    width: 862px;
+    height: 500px;
+    left: 0px;
+    top: 0px;
+
+    background: url(src/assets/hero/desktop/left-leaves.png);
+}
+
+div#two {
+    position: absolute;
+    width: 335px;
+    height: 428px;
+    left: 800px;
+    top: 36px;
+
+    background: url(src/assets/hero/desktop/plantperson.png);
+}
+
+div#three {
+    position: absolute;
+    width: 361px;
+    height: 500px;
+    left: 1079px;
+    top: 0px;
+
+    background: url(src/assets/hero/desktop/right-leaves.png);
+}
+
+div#firstSection {
+    background: #ffffff;
+    height: 299px;
+    display: flex;
+}
+
+section#options {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 1040px;
+    margin: auto;
+    justify-content: space-between;
+    background: #ffffff;
+
+    div {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        img {
+            width: 75px;
+            height: 75px;
+        }
+
+        img#waterImage {
+            width: 75px;
+            height: 75px;
+            transform: matrix(-1, 0, 0, 1, 0, 0);
+        }
+
+        label {
+            width: 219px;
+            height: 44px;
+            top: 90px;
+            left: 3px;
+            color: #848484;            
+        }
+
+        select {
+            width: 219px;
+            height: 40px;
+            border-color: #A8A8A8;
+            border-radius: 19px;
+            color: #A8A8A8;
+        }
+    }
+}
+
+section#noResults {
+    display: flex;
+    padding-top: 2rem;
+    width: 100%;
+    max-width: 1040px;
+    margin: auto;
+
+    div {
+        display: flex;
+        flex-direction: column;
+
+        h1 {
+            width: 442px;
+            height: 54px;
+            font-size: 45px;
+            line-height: 55px;
+            font-weight: bold;
+            color: #A9A9A9;
+        }
+
+        p {
+            width: 219px;
+            height: 81px;
+            font-size: 16px;
+            line-height: 27px;
+            color: #A9A9A9;
+        }
+    }
+
+    div#noResultsImage {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+
+}
+
+section#results {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+    width: 100%;
+    max-width: 1040px;
+    margin: auto;
+
+    img {
+        width: 158px;
+        height: 78px;
+    }
+
+    h1 {
+        font-weight: bold;
+        font-size: 55px;
+        line-height: 67px;
+        margin: 0;
+        color: #0C261C;
+    }
+
+    div {
+        ul {
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+            margin: auto;
+            padding: 0;
+            grid-gap: 2rem;
+
+            li {
+                display: flex;
+                flex-direction: column;
+                background: #fff;
+                width: 206px;
+                height: 245px;
+                border-radius: 5px;
+
+                img {
+                    margin: 10px auto;
+                    width: 135px;
+                    height: 150px;
+                }
+
+                span {
+                    margin: 0 20px;
+                    font-weight: bold;
+                    font-size: 16px;
+                    line-height: 28px;
+                    color: #1E6B4E;
+                }
+            }
+        }
+    }
+}

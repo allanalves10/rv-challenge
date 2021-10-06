@@ -1,0 +1,21 @@
+{
+  "name": "front-end-test-2",
+  "version": "1.0.0",
+  "description": "Simple Parcel Sandbox",
+  "main": "index.html",
+  "scripts": {
+    "start": "parcel index.html --open"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.15.4",
+    "axios": "0.21.4",
+    "parcel": "1.12.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.5",
+    "@babel/plugin-transform-runtime": "^7.15.0",
+    "parcel-bundler": "^1.6.1",
+    "sass": "^1.42.1"
+  },
+  "keywords": []
+}

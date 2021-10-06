@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Front End Test - Greenthumb</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./index.scss" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="left">
+        <div>
+          <img src="src/assets/icons/logo-white.svg" alt="Greenthumb" />
+          <h1>Find your next green friend</h1>
+          <img src="src/assets/icons/arrow-down.svg" />
+        </div>
+      </div>
+      <div class="center">
+      </div>
+      <div class="right">
+      </div>
+    </div>
+    <div id="firstSection">
+      <section id="options">
+        <div>
+          <img src="src/assets/illustrations/sun.png" alt="sunlight"/>
+          <label for="sunlight"><b>1.</b> Set the amount of <b>sunlight</b> your plant will get</label>
+      
+          <select name="sunlight" id="sunlight">
+            <option value="">Select...</option>
+            <option value="no">No</option>
+            <option value="low">Low</option>
+            <option value="high">High</option>
+          </select>
+        </div>
+        
+        <div>
+          <img id="waterImage" src="src/assets/illustrations/wateringcan.png" alt="water"/>
+          <label for="water"><b>2.</b> how often do you want to <b>water</b> your plant?</label>
+      
+          <select name="water" id="water">
+            <option value="">Select...</option>
+            <option value="regularly">Regularly</option>
+            <option value="daily">Daily</option>
+            <option value="rarely">Rarely</option>
+          </select>
+        </div>
+    
+        <div>
+          <img src="src/assets/illustrations/dog.png" alt="pets"/>
+          <label for="pets"><b>3.</b> Do you have pets? Do they <b>chew</b> plants?</label>
+          
+          <select name="pets" id="pets">
+            <option value="">Select...</option>
+            <option value="true">True</option>
+            <option value="false">False</option>
+          </select>
+        </div>
+      </section>
+    </div>
+    <section id="noResults">
+      <div>
+        <h1>No results yet…</h1>
+        <p>Use the filters above to find the plant that best fits your environment :)</p>
+      </div>
+      <div id="noResultsImage">
+        <img src="src/assets/illustrations/no-results.png" alt="no results"/>
+      </div>
+    </section>
+    <section id="results">
+      <!-- <img src="src/assets/illustrations/pick.png" alt="pick"/>
+      <h1>Our picks for you</h1> -->
+      <div>
+        <ul id="resultsList"></ul>
+      </div>
+    </section>
+    <script src="src/js/scripts.js"></script>
+  </body>
+</html>
