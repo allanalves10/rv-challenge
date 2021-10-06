@@ -46,7 +46,6 @@ function verifyParams() {
 const sunlightSelect = document.getElementById('sunlight');
 sunlightSelect.addEventListener('change', (e) => {
     if (e.target.value) {
-        console.log(e.target.value)
         valueSunlight = e.target.value;
         verifyParams();
     }
